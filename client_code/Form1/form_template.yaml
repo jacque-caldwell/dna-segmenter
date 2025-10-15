@@ -1,8 +1,67 @@
 components:
-- components: []
+- components:
+  - layout_properties: {grid_position: 'BISPLK,KBYVAO'}
+    name: text_box_1
+    properties: {placeholder: DNA segmenter}
+    type: TextBox
+  - layout_properties: {grid_position: 'LDGZJW,WXDNBV'}
+    name: label_1
+    properties: {text: Original text segment appears here}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''DNA segments appear here'']', property: text, writeback: false}
+    layout_properties: {grid_position: 'HIAIYE,NTINCM'}
+    name: text_box_2
+    properties: {placeholder: Original DNA segment appears here}
+    type: TextBox
+  - layout_properties: {grid_position: 'GVVIEH,TILXJZ'}
+    name: label_3
+    properties: {text: DNA segments appear here}
+    type: Label
+  - layout_properties: {grid_position: 'XWIHFR,COKKUB'}
+    name: text_area_2
+    properties: {text: Created DNA segments appear here}
+    type: TextArea
   layout_properties: {slot: default}
   name: column_panel_1
   properties: {col_widths: '{}'}
+  type: ColumnPanel
+- components:
+  - layout_properties: {grid_position: 'FJELHB,VNWXPJ DFDTIV,MCCRAC'}
+    name: button_2
+    properties: {text: Kmer size 6}
+    type: Button
+  - layout_properties: {grid_position: 'FJELHB,VNWXPJ MTLPQB,EHPMLK'}
+    name: button_1
+    properties: {text: kmer size 20}
+    type: Button
+  - layout_properties: {grid_position: 'FJELHB,VNWXPJ WDZYSF,ZTLHCF'}
+    name: label_4
+    properties: {text: 'Choose your segment size:'}
+    type: Label
+  - layout_properties: {grid_position: 'FJELHB,VNWXPJ AUGDOK,TWPPGF'}
+    name: text_box_3
+    properties: {placeholder: type kmer size here}
+    type: TextBox
+  - layout_properties: {grid_position: 'FJELHB,LFNTXU'}
+    name: linear_panel_1
+    properties: {}
+    type: LinearPanel
+  - layout_properties: {grid_position: 'EALNJR,GXAAAY'}
+    name: label_2
+    properties: {text: Enter your own DNA strand here}
+    type: Label
+  - layout_properties: {grid_position: 'BDZKSG,WANMQA'}
+    name: text_area_1
+    properties: {text: Type your DNA here}
+    type: TextArea
+  - layout_properties: {grid_position: 'KBUPNL,IXZLZN'}
+    name: file_loader_1
+    properties: {text: Import File}
+    type: FileLoader
+  layout_properties: {slot: left-nav}
+  name: column_panel_2
+  properties: {}
   type: ColumnPanel
 container:
   properties: {html: '@theme:standard-page.html'}
